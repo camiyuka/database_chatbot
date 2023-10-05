@@ -1,0 +1,42 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - agradecimento
+
+responses:
+  utter_greet:
+  - text: "oi! como vai?"
+
+  utter_cheer_up:
+  - text: "que pena que não está muito bem. Aqui, algo para te animar:"
+    image: "https://segredosdomundo.r7.com/wp-content/uploads/2016/12/conheca-os-munchkins-raca-de-gatos-que-nunca-crescem.jpg.webp"
+
+  utter_did_that_help:
+  - text: "isso te ajudou?"
+
+  utter_great:
+  - text: "que bom! posso te ajudar em algo?"
+
+  utter_happy:
+  - text: "que bom! o que mais?"
+
+  utter_goodbye:
+  - text: "tchau, até mais"
+
+  utter_iamabot:
+  - text: "eu sou um chatbot, feito pela camila"
+
+  utter_denada:
+  - text: "de nada! Se precisar de algo conte comigo"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

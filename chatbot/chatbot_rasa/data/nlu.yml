@@ -49,9 +49,8 @@ nlu:
     - estou falando com um robô?
     - você é humano?
 
-- intent: agradecimento
-  examples: |
-    - obrigada
-    - valeu 
-    - vlw 
-    - é nois 
+-intent: consulta_banco
+  - faça uma consulta no banco de dados
+  - consulte o banco de dados 
+  - veja no dataset 
+  - busque no dataset

@@ -6,8 +6,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+
 
 - story: sad path 1
   steps:
@@ -29,7 +28,9 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: obrigada
-  steps: 
-  - intent: agradecimento 
-  - action: utter_denada
+- story: buscar no banco
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: consulta_banco
+  - action: utter_banco 

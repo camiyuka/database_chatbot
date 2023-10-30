@@ -10,7 +10,7 @@ class ActionConectarDatabase(Action):
     def run(self, dispatcher, tracker, domain):
       
         conn = psycopg2.connect(
-            host=" 172.16.12.194",
+            host="127.0.0.1",
             database="pessoas",
             user="postgres",
             password=""

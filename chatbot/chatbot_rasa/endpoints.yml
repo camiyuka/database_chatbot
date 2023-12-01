@@ -41,10 +41,3 @@ action_endpoint:
 #  password: password
 #  queue: queue
 
-db:
-  dialect: "postgresql"
-  host: "127.0.0.1"
-  port: 5434
-  database: "spotify"
-  username: "postgres"
-  password: "Green#Ytb2010"

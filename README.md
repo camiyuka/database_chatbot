@@ -13,29 +13,38 @@ Seu propósito será responder a perguntas e consultas dos usuários relacionada
 
 OBS: `Python 3.10` é apenas aceito para versões `3.4.x` e acima, além disso, a instalação do Rasa pela Apple Silicon com Python `3.10` não é aceito em `3.4` mas poderá ser utilizado começando na versão `3.5.x`.
 
-2. Instalar Rasa Open Source 
-
-
+2. Ter WSL 2 instalada
 
 
 ## Como rodar o código na sua máquina:
 Instalar a última versão do pip:
 ```
-pip3 install -U pip
+sudo apt install python3-venv
 ```
 Criar um ambiente virtual na sua máquina:
 ```
-python -m venv .env
+python3 -m venv ./venv
 ```
 Ativar o ambiente virtual:
 ```
-.\.env\Scripts\activate
+source ./venv/bin/activate
 ```
 Instalar Rasa Open Source:
 ```
-pip install rasa
+python -m pip install --upgrade pip rasa
  ```
 Iniciar Rasa:
 ```
 rasa init
 ```
+ ```
+Para conversar com o chatbot, envie o seguinte comando no terminal:
+```
+rasa shell
+```
+Abra um terminal simultâneo e inicie o servidor de ações:
+```
+rasa run actions
+```
+
+No terminal do Rasa Shell vai ser possível interagir com o chatbot e perguntar sobre o banco de dados.

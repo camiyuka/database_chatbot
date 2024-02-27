@@ -37,7 +37,7 @@ Iniciar Rasa:
 ```
 rasa init
 ```
- ```
+
 Para conversar com o chatbot, envie o seguinte comando no terminal:
 ```
 rasa shell
